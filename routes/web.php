@@ -11,6 +11,5 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'PagesController@index')->name('home');
+Route::get('/product/{id}', 'PagesController@show')->name('product.show');

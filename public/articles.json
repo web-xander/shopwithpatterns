@@ -1,0 +1,43 @@
+[
+    {
+        "id": 1,
+        "name": "Computadora portatil",
+        "category": "electronica",
+        "price": 15000,
+        "image": "/img/product01.png",
+        "specifications": {
+            "ram": "16 Gb",
+            "hd": "1 Tb",
+            "os": "Windows 10"
+        } 
+        
+    },
+    {
+        "id": 2,
+        "name": "Zapatillas Nike",
+        "category": "indumentaria",
+        "price": 2500,
+        "image": "/img/product02.png",
+        "details": {
+            "colour": "red",
+            "talle": 42,
+            "material": "cuero",
+            "style": "running"
+        }
+    },
+    {
+        "id": 3,
+        "name": "Mermelada de Frutilla",
+        "category": "alimentos",
+        "price": 112,
+        "image": "/img/product03.png",
+        "details": {
+            "ingredients": [
+                {"name": "frutilla"},
+                {"name": "sugar"}
+            ],
+            "peso": 500
+        }
+        
+    }
+]
