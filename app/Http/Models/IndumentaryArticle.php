@@ -9,7 +9,7 @@ class IndumentaryArticle extends Article
     {
         parent::__construct($article);
 
-        $this->details = $article->details;
+        $this->details = $article->other_details;
     }
 
     public function render()

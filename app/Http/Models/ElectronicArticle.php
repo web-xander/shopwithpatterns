@@ -9,7 +9,7 @@ class ElectronicArticle extends Article
     {
         parent::__construct($article);
 
-        $this->specifications = $article->specifications;
+        $this->specifications = $article->other_details;
     }
 
     public function render()

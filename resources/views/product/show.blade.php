@@ -71,7 +71,7 @@
 
                         <ul class="product-links">
                             <li>Category:</li>
-                            <li><a href="#">{{$article->category}}</a></li>
+                            <li><a href="#">{{$article->category->name}}</a></li>
                         </ul>
 
                     </div>

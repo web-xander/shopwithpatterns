@@ -25,13 +25,13 @@
                     <div class="row">
                         <div class="col-md-12">
                             <h3>Color</h3>
-                            <p>{{$article->details->colour}}</p>
+                            <p>{{$article->details['colour']}}</p>
                             <h3>Talle</h3>
-                            <p>{{$article->details->talle}}</p>
+                            <p>{{$article->details['talle']}}</p>
                             <h3>Material</h3>
-                            <p>{{$article->details->material}}</p>
+                            <p>{{$article->details['material']}}</p>
                             <h3>Estilo</h3>
-                            <p>{{$article->details->style}}</p>
+                            <p>{{$article->details['style']}}</p>
 
                         </div>
                     </div>

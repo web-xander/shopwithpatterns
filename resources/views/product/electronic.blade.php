@@ -25,13 +25,13 @@
                     <div class="row">
                         <div class="col-md-12">
                             <h3>RAM</h3>
-                            <p>{{$article->specifications->ram}}</p>
+                            <p>{{$article->specifications['ram']}}</p>
 
                             <h3>HDD</h3>
-                            <p>{{$article->specifications->hd}}</p>
+                            <p>{{$article->specifications['hd']}}</p>
 
                             <h3>Operating System</h3>
-                            <p>{{$article->specifications->os}}</p>
+                            <p>{{$article->specifications['os']}}</p>
                             
                         </div>
                     </div>

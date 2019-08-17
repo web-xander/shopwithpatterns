@@ -11,15 +11,17 @@ class ArticleRepository
 
     public function __construct()
     {
-        $json = file_get_contents('articles.json');
-        $articles = json_decode($json);
+        $articles = \App\Product::all();
+
+        
         
         foreach($articles as $item){
-            if($item->category == "electronica")
+            
+            if($item->category->name == "electronica")
                 $this->articles[$item->id] = new ElectronicArticle($item);
-            elseif($item->category == "indumentaria")
+            elseif($item->category->name == "indumentaria")
                 $this->articles[$item->id] = new IndumentaryArticle($item);
-            elseif($item->category == "alimentos")
+            elseif($item->category->name == "alimentos")
                 $this->articles[$item->id] = new FoodArticle($item);
         }
 

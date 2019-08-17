@@ -12,4 +12,7 @@
 */
 
 Route::get('/', 'PagesController@index')->name('home');
-Route::get('/product/{id}', 'PagesController@show')->name('product.show');
+Route::get('/product/{id}', 'ProductController@show')->name('product.show');
+Route::post('/checkout', 'CartController@checkout')->name('checkout');
+Route::post('/subscribe', 'PagesController@subscribe')->name('subscribe');
+Route::delete('/subscribe/{email}/destroy', 'PagesController@unsubscribe')->name('unsubscribe');

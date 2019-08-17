@@ -25,8 +25,8 @@
                     <div class="row">
                         <div class="col-md-12">
                             <h3>Ingredientes</h3>
-                            @foreach ($article->details->ingredients as $ingredient)
-                                <p>{{$ingredient->name}}</p>
+                            @foreach ($article->details['ingredients'] as $ingredient)
+                                <p>{{$ingredient['name']}}</p>
                             @endforeach
                         </div>
                     </div>
