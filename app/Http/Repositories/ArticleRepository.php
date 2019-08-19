@@ -12,8 +12,6 @@ class ArticleRepository
     public function __construct()
     {
         $articles = \App\Product::all();
-
-        
         
         foreach($articles as $item){
             
